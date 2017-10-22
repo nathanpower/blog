@@ -1,14 +1,14 @@
-import React from 'react'
-import { Router, Link } from 'react-static'
-import glamorous from 'glamorous'
+import React from 'react';
+import { Router, Link } from 'react-static';
+import glamorous from 'glamorous';
 //
-import Routes from 'react-static-routes'
+import Routes from 'react-static-routes';
 
-import './app.css'
+import './app.css';
 
 const AppStyles = glamorous.div({
   fontFamily:
-    "'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif",
+    '\'HelveticaNeue-Light\', \'Helvetica Neue Light\', \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif',
   fontWeight: '300',
   fontSize: '16px',
   margin: '0',
@@ -16,7 +16,7 @@ const AppStyles = glamorous.div({
   '& a': {
     textDecoration: 'none',
     color: '#108db8',
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
   '& nav': {
     width: '100%',
@@ -24,13 +24,13 @@ const AppStyles = glamorous.div({
     '& a': {
       color: 'white',
       padding: '1rem',
-      display: 'inline-block',
-    },
+      display: 'inline-block'
+    }
   },
   '& .content': {
-    padding: '1rem',
-  },
-})
+    padding: '1rem'
+  }
+});
 
 export default () => (
   <Router>
@@ -45,4 +45,4 @@ export default () => (
       </div>
     </AppStyles>
   </Router>
-)
+);

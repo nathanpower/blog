@@ -1,12 +1,12 @@
-import React from 'react'
-import { getRouteProps, Link } from 'react-static'
+import React from 'react';
+import { getRouteProps, Link } from 'react-static';
+import markup from '../markup';
 //
 
 export default getRouteProps(({ post }) => (
   <div>
     <Link to="/blog/">{'<'} Back</Link>
     <br />
-    <h3>{post.title}</h3>
-    <p>{post.body}</p>
+    <div dangerouslySetInnerHTML={ { __html: markup(post.body) } } />
   </div>
-))
+));

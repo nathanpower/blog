@@ -1,0 +1,52 @@
+{
+  "rules": {
+    "camelcase": 0,
+    "comma-dangle": 2,
+    "comma-spacing": 2,
+    "consistent-return": 0,
+    "eqeqeq": 0,
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "jsx-quotes": [2, "prefer-double"],
+    "keyword-spacing": 2,
+    "linebreak-style": [2, "unix"],
+    "new-cap": 0,
+    "no-alert": 0,
+    "no-console": 2,
+    "no-debugger": 2,
+    "no-extra-semi": 2,
+    "no-loop-func": 0,
+    "no-multi-spaces": ["error", { "exceptions": { "VariableDeclarator": true, "ImportDeclaration": true  } }],
+    "no-shadow": 0,
+    "no-trailing-spaces": 2,
+    "no-undef": 2,
+    "no-underscore-dangle": 0,
+    "no-unreachable": 2,
+    "no-unused-vars": 2,
+    "no-use-before-define": [2, "nofunc"],
+    "object-curly-spacing": ["error", "always"],
+    "quotes": [2, "single"],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "semi": [2, "always"],
+    "semi-spacing": 2,
+    "space-before-blocks": 2,
+    "func-call-spacing": ["error", "never"]
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "process": true
+  }
+}
