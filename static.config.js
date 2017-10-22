@@ -5,11 +5,10 @@ import { renderStatic } from 'glamor/server';
 //
 import withCssLoader from 'react-static/lib/plugins/withCssLoader';
 import withFileLoader from 'react-static/lib/plugins/withFileLoader';
-import endpoint from './endpoint.config';
 
 export default {
   getRoutes: async () => {
-    const code = endpoint && endpoint.code || '';
+    const code = process.env.ENDPOINT_KEY || '';
     const { data: posts } = await axios.get(`https://github-blog-content-parser.azurewebsites.net/api/normalize-blog-content?code=${code}`);
 
     return [
